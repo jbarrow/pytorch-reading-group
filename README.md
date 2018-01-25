@@ -13,7 +13,7 @@ git clone https://github.com/jbarrow/pytorch-reading-group
 To automatically download the requirements, you must have [Conda](https://conda.io/docs/user-guide/install/index.html) installed (I highly recommend it for environment management). The *simplest* way to install conda (you can skip this if you already have a conda version) is to run: 
 
 ```
-wget conda.ml | sh
+curl https://conda.ml | sh
 ```
 
 Once you have Conda installed, you can create a virtual environment that gives you access to all of the necessary dependencies:
