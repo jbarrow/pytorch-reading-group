@@ -25,7 +25,7 @@ conda env create -f requirements.yml
 
 If you are having trouble installing PyTorch, it might be useful to read the [installation documentation](http://pytorch.org/). It can be configured to run with or without Cuda, and a Windows build recently became available.
 
-## Session 1: Feedforward Networks and Embeddings
+## Session 1: (Feb. 01, 2018) Feedforward Networks
 
 To download and preprocess the data, run the following commands:
 
@@ -43,18 +43,10 @@ jupyter notebook
 
 Make sure you select the appropriate environment for your notebook (the one you created earlier that has all the dependencies). Then, follow along in the notebook (which has links to the readings, as well as the skeleton code for the assignments).
 
-## Session 2: RNN Language Models and Sequential Data
+## Session 2: (Feb. 08, 2018) Embeddings
+
+The data for this session will be the same as the previous session.
+
+## Session 3: (Feb. 15, 2018) LSTMs
 
 `coming soon`
-
-## Session 3: Seq2Seq and Attention
-
-`coming soon`
-
-## Session 4: Parsing
-
-`coming soon`
-
-## Session 5: CNNs and Recursive Networks for Language Processing
-
-`comming soon`
