@@ -1,5 +1,5 @@
 #!/bin/bash
 
-wget https://www.cs.cornell.edu/people/pabo/movie-review-data/rt-polaritydata.tar.gz
-tar -xzvf rt-polaritydata.tar.gz
-rm rt-polaritydata.tar.gz
+wget http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+tar -xzvf aclImdb_v1.tar.gz
+rm aclImdb_v1.tar.gz
