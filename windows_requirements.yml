@@ -1,6 +1,7 @@
 name: pytorch-rg
 channels:
 - peterjc123
+- pytorch
 - conda-forge
 - defaults
 dependencies:
