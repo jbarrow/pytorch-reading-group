@@ -42,7 +42,7 @@ From the directory this is downloaded to. Alternatively, from the GitHub desktop
 To download and preprocess the data, run the following commands:
 
 ```
-cd 1_Feedforward_and_Embeddings/data
+cd 1_Feedforward_Networks/data
 sh fetch.sh
 ```
 
