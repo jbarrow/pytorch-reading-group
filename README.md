@@ -22,7 +22,17 @@ Once you have Conda installed, you can create a virtual environment that gives y
 
 ```
 cd pytorch-reading-group
+```
+If you are on **Linux or OS X**:
+
+```
 conda env create -f requirements.yml
+```
+
+If you are on **Windows**:
+
+```
+conda env create -f windows_requirements.yml
 ```
 
 If you are having trouble installing PyTorch, it might be useful to read the [installation documentation](http://pytorch.org/). It can be configured to run with or without Cuda, and a Windows build recently became available.
