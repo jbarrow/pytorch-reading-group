@@ -1,23 +1,42 @@
 import os
+import glob
+import string
 
-def read_rt_data(input_dir='data/rt-polaritydata'):
-    def _read(filename, label):
+import numpy as np
+
+def read_imdb_data(input_dir='../data/aclImdb/train'):
+    translator = str.maketrans(' ', ' ', string.punctuation)
+
+    def _read(directory, label):
         X, y = [], []
-        with open(filename, encoding='cp1252') as fp:
-            for line in fp:
-                X.append(line.split())
-                y.append(0)
+        for f in glob.glob(directory):
+            with open(f) as fp:
+                line = fp.read()
+                line = line.lower()
+                line = line.translate(translator)
+                X.append(line)
+                y.append(label)
         return X, y
     
-    negative = os.path.join(input_dir, 'rt-polarity.neg')
-    positive = os.path.join(input_dir, 'rt-polarity.pos')
+    negative = os.path.join(input_dir, 'neg', '*.txt')
+    positive = os.path.join(input_dir, 'pos', '*.txt')
     
     Xn, yn = _read(negative, 0)
     Xp, yp = _read(positive, 1)
-    return Xn + Xp, yn + yp
+    return Xn + Xp, np.array(yn + yp)
 
-def read_stop_words(input_file=''):
-    with open(input_fule) as fp:
+def data_batcher(X, y, batches=5):
+    indices = np.arange(X.shape[0])
+    np.random.shuffle(indices)
+    
+    for i in range(batches):
+        start = int((i * X.shape[0]) / batches)
+        end = int(((i + 1) * X.shape[0]) / batches)
+        print(start, end)
+        yield X[start:end, :], y[start:end]
+
+def read_stop_words(input_file='../data/stopwords.txt'):
+    with open(input_file) as fp:
         stopwords = [l.strip().lower() for l in fp]
     return stopwords
 
