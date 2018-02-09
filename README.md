@@ -67,8 +67,19 @@ Make sure you select the appropriate environment for your notebook (the one you 
 
 ## Session 2: (Feb. 08, 2018) Embeddings
 
-The data for this session will be the same as the previous session.
+For this session, we'll be using both the IMDB dataset downloaded for the previous session, and the GLoVE embeddings, which you can download via:
+
+```
+cd data
+sh fetch_glove.sh
+```
+
+Similarly, start a notebook server.
 
 ## Session 3: (Feb. 15, 2018) LSTMs
+
+`coming soon`
+
+## Session 4: (Feb. 22, 2018) Hierarchical LSTMs
 
 `coming soon`
