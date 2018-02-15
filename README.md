@@ -78,7 +78,12 @@ Similarly, start a notebook server.
 
 ## Session 3: (Feb. 15, 2018) LSTMs
 
-`coming soon`
+For this session, we'll be using the complete works of Sherlock Holmes as a text file. We'll be investigating the use of character RNNs in generating Sherlock Holmes-esque text.
+
+```
+cd data
+sh fetch_sherlock.sh
+```
 
 ## Session 4: (Feb. 22, 2018) Hierarchical LSTMs
 
